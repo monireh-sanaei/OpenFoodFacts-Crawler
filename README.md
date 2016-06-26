@@ -1,6 +1,6 @@
 # EAN lookup client
 
-A program that will for a given file (a text file with one product name/description per line) will look up the EAN code(13 digit code) in a given database. The heuristics should be that if the product is not found in one DB it will, as a fall back try in next DB (which is beyond the scope of this test though). The look up should not be hardcoded but rather be wrapped with internal API thus transparent to the program. The lookup is an HTTP communication with latency, so in order to go through the list as fast as possible, multithreaded lookups should be used (using java's Future and thread pool).
+A program that for a given file (a text file with one product name/description per line) will look up the EAN code(13 digit code) in a given database. The heuristics should be that if the product is not found in one DB it will, as a fall back try in next DB (which is beyond the scope of this test though). The look up should not be hardcoded but rather be wrapped with internal API thus transparent to the program. The lookup is an HTTP communication with latency, so in order to go through the list as fast as possible, multithreaded lookups should be used (using java's Future and thread pool).
 
 As the DB :
 
